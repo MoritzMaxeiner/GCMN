@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GCM Native Options</title>
+		<style>
+			body: { padding: 10px; }
+
+			th { vertical-align: text-top; white-space: nowrap; padding: 0px 20px 5px 20px; }
+			td { padding: 0px 2px 0px 2px; margin: 0; text-align:center; vertical-align: middle; }
+			table { border-collapse: separate; border-spacing: 0; }
+
+			i { cursor: pointer; }
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+
+	<body>
+		<table id="gcm_registrations" >
+			<tr>
+				<th>Sender IDs</th>
+				<th>Native Port</th>
+				<th>Receive only</th>
+				<th>Registration ID</th>
+			</tr>
+			<tr>
+				<td><input id="sender-ids" type="text"/></td>
+				<td><input id="native-port" type="text" maxlength="5" style="max-width: 50px"/></td>
+				<td><input id="receive-only" type="checkbox" disabled/></td>
+				<td><input id="registration-id" type"text" disabled></td>
+				<td><i id="save" class="material-icons" style="position: relative; left: 10px;">save</i></td>
+			</tr>
+		</table>
+
+		<div id="status" style="position: relative; left: 2px; top: 5px"></div>
+
+		<script src="options.js"></script>
+	</body>
+</html>

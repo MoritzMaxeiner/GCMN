@@ -1,0 +1,11 @@
+{
+	"manifest_version": 2,
+
+	"name": "org.ucworks.gcmn.host_pipe",
+	"description": "Google Cloud Messaging for native applications: Native messaging host",
+	"path": "${PATH_TO_GCMN}/host_pipe/host_pipe.sh",
+	"type": "stdio",
+	"allowed_origins": [
+		"chrome-extension://${EXTENSION_ID}/"
+	]
+}

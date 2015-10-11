@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+
+	"name": "GCM Native",
+	"description": "Google Cloud Messaging for native applications: Chrome extension",
+	"version": "0.1",
+
+	"permissions": [
+		"gcm",
+		"storage",
+		"nativeMessaging"
+	],
+
+	"background": {
+		"scripts": ["event_page.js"],
+		"persistent": false
+	},
+
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
+
+	"icons": {
+		"48": "thirdParty/ic_message_black_48dp_2x.png"
+	}
+}
